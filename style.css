@@ -22,14 +22,21 @@
         font-style: normal;
     }
 
+    @counter-style repeating-emoji {
+        system: cyclic;
+        symbols: "\1F64C" "\1F3EB" "\1F4DA";
+        suffix: " ";
+        width: 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+
     body {
 
-        background-color: green;
+        /* background-color: green; */
 
-/* 
         background-image: linear-gradient(
             135deg, #f5f7fa 0%, #c3cfe2 100%);
- */
 
         /* For testing... Seems to work.
         background-image: linear-gradient(
@@ -48,7 +55,7 @@
     /* The default font size for the contents of the page
     will be 1.2rem. */
     /* Is this it? ... */
-    body p{
+    body > p{
         font-size: 1.2rem;
         /* The paragraph will never exceed 70ch wide
         and the distance the distance between lines of text will be set to 1.5. */
@@ -75,13 +82,16 @@
         background-image: url("assets/img/studentsbg.png");
         background-position: top;
         background-attachment: fixed;
-        background-size: contain; /* Or cover? */
+        background-size: contain;
         background-repeat: no-repeat;
         /* margin: 0 auto; */
 
         /* width: 100%; */
 
         /* padding-bottom: 4rem; */
+
+        text-align: center;
+
     }
 
     header > div{
@@ -90,6 +100,45 @@
 
         /* display: none; */
 
+        display: inline-block;
+        
+        margin-top: 4rem;
+        color: white;
+
+    }
+
+    header > div > *{
+        text-align: center;
+
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    header > div > p{
+        /* font-size: 16px; */
+    }
+
+    main {
+        box-shadow: 1px darkgrey 0 0;
+        background-color: whitesmoke;
+    }
+
+    #intro-container{
+        text-align: left;
+        background-color: #c5192d;
+
+        font-weight: bold;
+
+        padding: 2rem;
+    }
+
+    /* Works... */
+    #intro-container > div > ul{
+        list-style-type: repeating-emoji;
+    }
+
+    article > * {
+        display: inline-block;
     }
 
     /* Phones */ 
