@@ -50,6 +50,10 @@
         font-size: 14px;
         
         margin: 0 auto;
+
+/*         display: inline-block;
+        text-align: center; */
+
     }
 
     /* The default font size for the contents of the page
@@ -105,6 +109,9 @@
         margin-top: 4rem;
         color: white;
 
+        /* Border? */
+        box-shadow: 1px ;
+
     }
 
     header > div > *{
@@ -119,7 +126,7 @@
     }
 
     main {
-        box-shadow: 1px darkgrey 0 0;
+        box-shadow: 0 0 1px darkgrey;
         background-color: whitesmoke;
     }
 
@@ -139,6 +146,9 @@
 
     article > * {
         display: inline-block;
+
+        /*  */
+        box-shadow: 0 0 1px darkgrey;
     }
 
     /* Phones */ 
@@ -149,10 +159,80 @@
     /* Tablets */
     @media only screen and (min-width : 600px) 
     and (max-width: 960px) {
+        body{
+            font-size: 16px;
+        }
+
+        header{
+            height: 65vh;
+        }
+
+        /* 
+        The 3 main boxes (“Education for all”, main and footer)
+        will now take only 85 percent of the viewport width
+        (check mock-up).
+        */
+        header > div{
+            width: 85vw;
+        }
+
+        main, footer{
+            width: 85vw;
+        }
+
+        article{
+            column-count: 2;
+            column-width: 45%;
+            column-gap: 10%;
+        }
+
+        #intro-container{
+
+            background: linear-gradient(to right, #c5192d 0%, #c5192d 50%, whitesmoke 50%, whitesmoke 100%);
+
+/*             background-image: linear-gradient(
+                180deg, #f5f7fa 100%, #c3cfe2 100%); */
+
+        }
 
     }
 
     /* Desktop */
     @media only screen and (min-width : 960px) {
-        
+
+        body{
+            font-size: 24px;
+        }
+        header{
+            height: 65vh;
+        }
+
+        /* 
+        The 3 main boxes (“Education for all”, main and footer)
+        will now take only 85 percent of the viewport width
+        (check mock-up).
+        */
+        header > div{
+            width: 70vw;
+        }
+
+        main, footer{
+            width: 70vw;
+        }
+
+        article{
+            column-count: 2;
+            column-width: 45%;
+            column-gap: 10%;
+        }
+
+        #intro-container{
+
+            background: linear-gradient(to right, #c5192d 0%, #c5192d 50%, whitesmoke 50%, whitesmoke 100%);
+
+/*             background-image: linear-gradient(
+                180deg, #f5f7fa 100%, #c3cfe2 100%); */
+
+        }
+    
     }
