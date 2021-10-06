@@ -194,12 +194,24 @@
     }
 
     footer{
-        margin: 0 auto;
+        /* display: inline-block; */
         background-color: #c5192d;
+        color: white;
+
+        margin: 0 auto;
+        
+        text-align: center;
     }
 
-    footer > a{
-        
+    footer > * {
+        padding: 2rem; /* Adds padding around the text. */
+    }
+
+    footer a{
+        color: white;
+    }
+    footer a:after{
+        color: white;
     }
 
     /* Phones */ 
