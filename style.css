@@ -122,7 +122,7 @@
         /* Border? */
         /* box-shadow: 1px ; */
 
-        width: 93vw;
+        width: 94vw;
 
     }
 
@@ -149,18 +149,14 @@
 
         margin: 0 auto; /* Important to center articles... */
 
-        width: 93vw;
+        width: 94vw;
 
 /*         display: inline-block;
         text-align: center; */
-
     }
 
-    main > * {
-/*         display: inline-block;
-        text-align: center; */
-
-        /* width: 95vw; */
+    main > article:nth-child(2){
+        box-shadow: 0 1px darkgrey; /* The closest I got... */
     }
 
     #intro-container{
@@ -180,8 +176,6 @@
         padding: 1.5rem; /* To add padding around text & images. */
 
         /* text-align: center; */
-
-        
     }
 
     article > * {
@@ -197,6 +191,15 @@
     img {
         max-width: 100%; /* To make images responsive. */
         height: auto;
+    }
+
+    footer{
+        margin: 0 auto;
+        background-color: #c5192d;
+    }
+
+    footer > a{
+        
     }
 
     /* Phones */ 
