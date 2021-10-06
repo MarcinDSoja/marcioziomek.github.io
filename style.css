@@ -2,12 +2,32 @@
     /* Do shared configurations first, 
     then change depending on screen size. */
 
-    @font-face {
+/*     @font-face {
         font-family: 'Lato';
         src: url('assets/fonts/lato-regular-webfont.woff2') format('woff2'),
              url('assets/fonts/lato-regular-webfont.woff') format('woff'),
              url('assets/fonts/lato-regular-webfont.ttf') format('truetype'),
              url('assets/fonts/lato-regular-webfont.svg#latoregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    } */
+
+/*     @font-face {
+        font-family: 'Lato';
+        src: url('assets/fonts/lato-medium-webfont.woff2') format('woff2'),
+             url('assets/fonts/lato-medium-webfont.woff') format('woff'),
+             url('assets/fonts/lato-medium-webfont.ttf') format('truetype'),
+             url('assets/fonts/lato-medium-webfont.svg#latomedium') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    } */
+
+    @font-face {
+        font-family: 'Lato';
+        src: url('assets/fonts/lato-semibold-webfont.woff2') format('woff2'),
+             url('assets/fonts/lato-semibold-webfont.woff') format('woff'),
+             url('assets/fonts/lato-semibold-webfont.ttf') format('truetype'),
+             url('assets/fonts/lato-semibold-webfont.svg#latosemibold') format('svg');
         font-weight: normal;
         font-style: normal;
     }
@@ -45,7 +65,7 @@
         /* be defined as fallback font. */
         font-size: 14px;
         
-        /* margin: 0 auto; */
+        margin: 0 auto; /* Important to remove default margins. */
 
     }
 
@@ -100,15 +120,10 @@
         color: white;
 
         /* Border? */
-        box-shadow: 1px ;
+        /* box-shadow: 1px ; */
 
-    }
+        width: 93vw;
 
-    header > div > *{
-/*         text-align: center;
-
-        padding-left: 4rem;
-        padding-right: 4rem; */
     }
 
     header > div > h1{
@@ -129,10 +144,23 @@
         box-shadow: 0 0 1px darkgrey;
         /* The background color of this element is “whitesmoke”. */
         background-color: whitesmoke;
+
+        /* text-align: left; */
+
+        margin: 0 auto; /* Important to center articles... */
+
+        width: 93vw;
+
+/*         display: inline-block;
+        text-align: center; */
+
     }
 
     main > * {
-        
+/*         display: inline-block;
+        text-align: center; */
+
+        /* width: 95vw; */
     }
 
     #intro-container{
@@ -148,19 +176,26 @@
         list-style-type: repeating-emoji;
     }
 
+    article{
+        padding: 1.5rem; /* To add padding around text & images. */
+
+        /* text-align: center; */
+
+        
+    }
+
     article > * {
+
         display: inline-block;
+
+        /* font-weight:700; */
 
         /*  */
         /* box-shadow: 0 0 1px darkgrey; */
     }
 
-    article{
-        padding: 1.5rem;
-    }
-
     img {
-        max-width: 100%;
+        max-width: 100%; /* To make images responsive. */
         height: auto;
     }
 
