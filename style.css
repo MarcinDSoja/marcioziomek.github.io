@@ -33,26 +33,19 @@
 
     body {
 
-        /* background-color: green; */
-
+        /* The whole page sets linear gradient with
+        the following values “(135deg, #f5f7fa 0%, #c3cfe2 100%)”. */
         background-image: linear-gradient(
             135deg, #f5f7fa 0%, #c3cfe2 100%);
 
-        /* For testing... Seems to work.
-        background-image: linear-gradient(
-        135deg, red 0%, blue 100%); */
-
-        /* WHERE IS LATO? :/ */
-        /* Are we supposed to find and download it? */
+        /* The main font will be “Lato”
+        and sans-serif will be defined as fallback font. */
         font-family: 'Lato', sans-serif;
-        /* Downloaded it... Looks right? */
 
+        /* be defined as fallback font. */
         font-size: 14px;
         
-        margin: 0 auto;
-
-/*         display: inline-block;
-        text-align: center; */
+        /* margin: 0 auto; */
 
     }
 
@@ -62,7 +55,8 @@
     body > p{
         font-size: 1.2rem;
         /* The paragraph will never exceed 70ch wide
-        and the distance the distance between lines of text will be set to 1.5. */
+        and the distance the distance between lines of text
+        will be set to 1.5. */
         max-width: 70ch;
         line-height: 1.5;
     }
@@ -72,40 +66,36 @@
     }
 
     h1 {
+        /* H1 elements will have a size of 4rem */
         font-size: 4rem;
     }
 
     h2 {
+        /* H2 elements will have a size of 2.2rem */
         font-size: 2.2rem;
     }
 
     header {
-        /* background-color: green; */
-
         height: 55vh;
         background-image: url("assets/img/studentsbg.png");
         background-position: top;
         background-attachment: fixed;
         background-size: contain;
         background-repeat: no-repeat;
-        /* margin: 0 auto; */
-
-        /* width: 100%; */
-
-        /* padding-bottom: 4rem; */
 
         text-align: center;
-
     }
 
     header > div{
+        /* The background colour of the div inside the header
+        is #c5192d. */
         background-color: #c5192d;
-        /* margin-top: 4rem; */
-
-        /* display: none; */
 
         display: inline-block;
         
+        /* The div inside the header will be pushed down 4rem
+        (i.e.: it is positioned relative to
+        its nearest positioned ancestor which is the header). */
         margin-top: 4rem;
         color: white;
 
@@ -115,19 +105,34 @@
     }
 
     header > div > *{
-        text-align: center;
+/*         text-align: center;
 
         padding-left: 4rem;
-        padding-right: 4rem;
+        padding-right: 4rem; */
+    }
+
+    header > div > h1{
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
     header > div > p{
-        /* font-size: 16px; */
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
     }
 
     main {
+        /* It sets a box shadow where the blur-radius will be 1px. */
+        /* The box shadow’s color is “darkgrey” */
+        /* The offset-x, offset-y and spread-radius values will be set to 0. */
         box-shadow: 0 0 1px darkgrey;
+        /* The background color of this element is “whitesmoke”. */
         background-color: whitesmoke;
+    }
+
+    main > * {
+        
     }
 
     #intro-container{
@@ -139,7 +144,6 @@
         padding: 2rem;
     }
 
-    /* Works... */
     #intro-container > div > ul{
         list-style-type: repeating-emoji;
     }
@@ -148,11 +152,24 @@
         display: inline-block;
 
         /*  */
-        box-shadow: 0 0 1px darkgrey;
+        /* box-shadow: 0 0 1px darkgrey; */
+    }
+
+    article{
+        padding: 1.5rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
     }
 
     /* Phones */ 
     @media only screen and (max-width : 600px) {
+
+/*         header > div{
+            width: 95vw;
+        } */
 
     }
 
@@ -187,12 +204,7 @@
         }
 
         #intro-container{
-
             background: linear-gradient(to right, #c5192d 0%, #c5192d 50%, whitesmoke 50%, whitesmoke 100%);
-
-/*             background-image: linear-gradient(
-                180deg, #f5f7fa 100%, #c3cfe2 100%); */
-
         }
 
     }
@@ -229,10 +241,6 @@
         #intro-container{
 
             background: linear-gradient(to right, #c5192d 0%, #c5192d 50%, whitesmoke 50%, whitesmoke 100%);
-
-/*             background-image: linear-gradient(
-                180deg, #f5f7fa 100%, #c3cfe2 100%); */
-
         }
     
     }
