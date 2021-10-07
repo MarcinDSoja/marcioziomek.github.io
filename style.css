@@ -47,8 +47,8 @@
         symbols: "\1F64C" "\1F3EB" "\1F4DA";
         suffix: " ";
         width: 1rem;
-        margin-left: 1rem;
-        margin-right: 1rem;
+/*         margin-left: 1rem;
+        margin-right: 1rem; */
       }
 
     body {
@@ -83,7 +83,6 @@
 
     body > footer{
         margin-top: 2rem; /* Adds extra margin top. */
-        margin-bottom: -2rem; /* Removes margin under footer. */
     }
 
     h1,h2 {
@@ -98,6 +97,10 @@
     h2 {
         /* H2 elements will have a size of 2.2rem */
         font-size: 2.2rem;
+
+        display: inline-block;
+
+        margin-bottom: 0rem;
     }
 
     header {
@@ -127,15 +130,13 @@
         /* Border? */
         /* box-shadow: 1px ; */
 
-        width: 94vw;
+        width: 95vw;
     }
 
     header > div > h1{
         padding-left: 2rem;
         padding-right: 2rem;
     }
-
-
 
     header > div > p{
         padding-left: 1rem;
@@ -155,16 +156,16 @@
 
         margin: 0 auto; /* Important to center articles... */
 
-        width: 94vw;
+        width: 95vw;
 
 /*         display: inline-block;
         text-align: center; */
 
     }
 
-    main > article:nth-child(2){
-        box-shadow: 0 1px darkgrey; /* The closest I got... */
-    }
+/*     main > article:nth-child(2){
+        box-shadow: 0 1px darkgrey;
+    } */
 
     #intro-container{
         text-align: left;
@@ -173,6 +174,11 @@
         font-weight: bold;
 
         padding: 2rem;
+    }
+
+    /* Not have for mobile view. */
+    #intro-container > * {
+        /* float: left; */
     }
 
     #intro-container > div > ul{
@@ -187,7 +193,7 @@
 
     article > * {
 
-        display: inline-block;
+        /* display: inline-block; */
 
         /* font-weight:700; */
 
@@ -209,7 +215,7 @@
         
         text-align: center;
 
-        width: 94vw; /* Adjusts width to 94% of viewport. */
+        width: 95vw; /* Adjusts width to 94% of viewport. */
 
     }
 
@@ -227,6 +233,10 @@
     /* Phones */ 
     @media only screen and (max-width : 600px) {
 
+        main > article:nth-child(2){
+            box-shadow: 0 1px darkgrey;
+        }
+
 /*         header > div{
             width: 95vw;
         } */
@@ -236,11 +246,14 @@
     /* Tablets */
     @media only screen and (min-width : 600px) 
     and (max-width: 960px) {
+
         body{
+            /* The default browser font size must be set to 16px. */
             font-size: 16px;
         }
 
         header{
+            /* The header will be 65vh tall. */
             height: 65vh;
         }
 
@@ -257,14 +270,24 @@
             width: 85vw;
         }
 
+        main > article{
+            box-shadow: 0 1px darkgrey;
+        }
+
         article{
             column-count: 2;
             column-width: 45%;
             column-gap: 10%;
         }
 
+        article > * {
+            float: left;
+            /* background-color: green; */
+        }
+
         #intro-container{
             background: linear-gradient(to right, #c5192d 0%, #c5192d 50%, whitesmoke 50%, whitesmoke 100%);
+            float: left;
         }
 
     }
@@ -281,7 +304,7 @@
 
         /* 
         The 3 main boxes (“Education for all”, main and footer)
-        will now take only 85 percent of the viewport width
+        will now take only 70 percent of the viewport width
         (check mock-up).
         */
         header > div{
@@ -292,15 +315,27 @@
             width: 70vw;
         }
 
+        main > article{
+            box-shadow: 0 1px darkgrey;
+        }
+
         article{
             column-count: 2;
             column-width: 45%;
             column-gap: 10%;
         }
 
-        #intro-container{
+        article > * {
+            float: left;
+            /* background-color: green; */
+        }
 
+        #intro-container{
             background: linear-gradient(to right, #c5192d 0%, #c5192d 50%, whitesmoke 50%, whitesmoke 100%);
+        }
+
+        #intro-container > *{
+            float: left;
         }
     
     }
