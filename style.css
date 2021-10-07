@@ -81,6 +81,11 @@
         line-height: 1.5;
     }
 
+    body > footer{
+        margin-top: 2rem; /* Adds extra margin top. */
+        margin-bottom: -2rem; /* Removes margin under footer. */
+    }
+
     h1,h2 {
         font-family: "MontserratBold", sans-serif;
     }
@@ -123,13 +128,14 @@
         /* box-shadow: 1px ; */
 
         width: 94vw;
-
     }
 
     header > div > h1{
         padding-left: 2rem;
         padding-right: 2rem;
     }
+
+
 
     header > div > p{
         padding-left: 1rem;
@@ -153,6 +159,7 @@
 
 /*         display: inline-block;
         text-align: center; */
+
     }
 
     main > article:nth-child(2){
@@ -198,9 +205,12 @@
         background-color: #c5192d;
         color: white;
 
-        margin: 0 auto;
+        margin: 0 auto; /* Centers the footer. */
         
         text-align: center;
+
+        width: 94vw; /* Adjusts width to 94% of viewport. */
+
     }
 
     footer > * {
