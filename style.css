@@ -1,11 +1,53 @@
-p{
-    color:red;
+@font-face {
+    font-family: montserrat;
+    src: url(/assets/fonts/Montserrat-Bold.ttf);
 }
 
-h1,h2{
-    color:green;
+@font-face {
+        font-family: lato;
+        src: url(/assets/fonts/lato-regular-webfont.svg);
+    }
+
+
+@media screen and (max-width:599px) {
+    
+    body{
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        font-family: lato, sans-serif;
+        font-size: 14px;
+    }
+
+    *{
+        font-size: 1.2rem;
+    }
+
+    h1,h2,h3{
+        font-family: montserrat, sans-serif;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+
+    h2{
+        font-size: 2.2rem;
+    }
+
+    p{
+        width: 70ch;
+        line-height: 1.5;
+    }
+
+    header{
+        height: 55vh;
+        background-image: url(assets/img/studentsbg.png);
+        background-attachment:fixed;
+        background-position: center top;
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        
+    }
+
 }
 
-h1::first-letter{
-    color:pink;
-}
