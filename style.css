@@ -89,7 +89,7 @@
         background-image: url("assets/img/studentsbg.png");
         background-position: top;
         background-attachment: fixed;
-        background-size: contain;
+        background-size:cover; /* Always same position and size. */
         background-repeat: no-repeat;
 
         text-align: center;
