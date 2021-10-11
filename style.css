@@ -200,6 +200,8 @@
 
         width: 95vw; /* Adjusts width to 94% of viewport. */
 
+        margin-bottom: 0;
+
     }
 
     footer > * {
