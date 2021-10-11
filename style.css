@@ -128,9 +128,6 @@
         margin-top: 4rem;
         color: white;
 
-        /* Border? */
-        /* box-shadow: 1px ; */
-
         width: 95vw;
     }
 
@@ -159,14 +156,7 @@
 
         width: 95vw;
 
-/*         display: inline-block;
-        text-align: center; */
-
     }
-
-/*     main > article:nth-child(2){
-        box-shadow: 0 1px darkgrey;
-    } */
 
     #intro-container{
         text-align: left;
@@ -179,7 +169,7 @@
 
     /* Not have for mobile view. */
     #intro-container > * {
-        /* float: left; */
+
     }
 
     #intro-container > div > ul{
@@ -188,18 +178,10 @@
 
     article{
         padding: 1.5rem; /* To add padding around text & images. */
-
-        /* text-align: center; */
     }
 
     article > * {
 
-        /* display: inline-block; */
-
-        /* font-weight:700; */
-
-        /*  */
-        /* box-shadow: 0 0 1px darkgrey; */
     }
 
     img {
@@ -237,10 +219,6 @@
         main > article:nth-child(2){
             box-shadow: 0 1px darkgrey;
         }
-
-/*         header > div{
-            width: 95vw;
-        } */
 
     }
 
