@@ -201,12 +201,15 @@
 
         width: 95vw; /* Adjusts width to 94% of viewport. */
 
-        margin-bottom: 0;
 
     }
 
     footer > * {
         padding: 2rem; /* Adds padding around the text. */
+    }
+
+    footer > p{
+        margin-bottom: 0;
     }
 
     footer a{
