@@ -125,7 +125,8 @@
         /* The div inside the header will be pushed down 4rem
         (i.e.: it is positioned relative to
         its nearest positioned ancestor which is the header). */
-        margin-top: 4rem;
+        position: relative;
+        top: 4rem;
         color: white;
 
         width: 95vw;
