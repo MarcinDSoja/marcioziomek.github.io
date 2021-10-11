@@ -45,13 +45,24 @@
     header{
         height: 55vh;
         background-image: url(assets/img/studentsbg.png);
-        background-attachment: fixed;
-        background-position: top;
+        background-attachment:fixed;
+        background-position: top center;
         display: block;
         background-size: contain;
         background-repeat: no-repeat;
         
     }
 
+    header > div{
+        background-color: #c5192d;
+        position: relative;
+        top: 3rem;
+    }
+
+    
+  
+
 }
+
+
 
