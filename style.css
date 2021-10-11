@@ -1,0 +1,326 @@
+
+    /* Do shared configurations first, 
+    then change depending on screen size. */
+
+/*     @font-face {
+        font-family: 'Lato';
+        src: url('assets/fonts/lato-regular-webfont.woff2') format('woff2'),
+             url('assets/fonts/lato-regular-webfont.woff') format('woff'),
+             url('assets/fonts/lato-regular-webfont.ttf') format('truetype'),
+             url('assets/fonts/lato-regular-webfont.svg#latoregular') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    } */
+
+/*     @font-face {
+        font-family: 'Lato';
+        src: url('assets/fonts/lato-medium-webfont.woff2') format('woff2'),
+             url('assets/fonts/lato-medium-webfont.woff') format('woff'),
+             url('assets/fonts/lato-medium-webfont.ttf') format('truetype'),
+             url('assets/fonts/lato-medium-webfont.svg#latomedium') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    } */
+
+    @font-face {
+        font-family: 'Lato';
+        src: url('assets/fonts/lato-semibold-webfont.woff2') format('woff2'),
+             url('assets/fonts/lato-semibold-webfont.woff') format('woff'),
+             url('assets/fonts/lato-semibold-webfont.ttf') format('truetype'),
+             url('assets/fonts/lato-semibold-webfont.svg#latosemibold') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: 'MontserratBold';
+        src: url('assets/fonts/montserrat-bold-webfont.woff2') format('woff2'),
+             url('assets/fonts/montserrat-bold-webfont.woff') format('woff'),
+             url('assets/fonts/montserrat-bold-webfont.ttf') format('truetype'),
+             url('assets/fonts/montserrat-bold-webfont.svg#montserratbold') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    @counter-style repeating-emoji {
+        system: cyclic;
+        symbols: "\1F64C" "\1F3EB" "\1F4DA";
+        suffix: " ";
+        /* width: 1rem; */
+        
+/*         margin-left: 1rem;
+        margin-right: 1rem; */
+      }
+
+    body {
+
+        /* The whole page sets linear gradient with
+        the following values “(135deg, #f5f7fa 0%, #c3cfe2 100%)”. */
+        background-image: linear-gradient(
+            135deg, #f5f7fa 0%, #c3cfe2 100%);
+
+        /* The main font will be “Lato”
+        and sans-serif will be defined as fallback font. */
+        font-family: 'Lato', sans-serif;
+
+        /* be defined as fallback font. */
+        font-size: 14px;
+        
+        margin: 0 auto; /* Important to remove default margins. */
+
+    }
+
+    /* The default font size for the contents of the page
+    will be 1.2rem. */
+    /* Is this it? ... */
+    body > p{
+        font-size: 1.2rem;
+        /* The paragraph will never exceed 70ch wide
+        and the distance the distance between lines of text
+        will be set to 1.5. */
+        max-width: 70ch;
+        line-height: 1.5;
+    }
+
+    body > footer{
+        margin-top: 2rem; /* Adds extra margin top. */
+    }
+
+    h1,h2, h3 {
+        font-family: "MontserratBold", sans-serif;
+    }
+
+    h1 {
+        /* H1 elements will have a size of 4rem */
+        font-size: 4rem;
+    }
+
+    h2 {
+        /* H2 elements will have a size of 2.2rem */
+        font-size: 2.2rem;
+
+        display: inline-block;
+
+        margin-bottom: 0rem;
+    }
+
+    header {
+        height: 55vh;
+        background-image: url("assets/img/studentsbg.png");
+        background-position: top;
+        background-attachment: fixed;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        text-align: center;
+    }
+
+    header > div{
+        /* The background colour of the div inside the header
+        is #c5192d. */
+        background-color: #c5192d;
+
+        display: inline-block;
+        
+        /* The div inside the header will be pushed down 4rem
+        (i.e.: it is positioned relative to
+        its nearest positioned ancestor which is the header). */
+        position: relative;
+        top: 4rem;
+        color: white;
+
+        width: 95vw;
+    }
+
+    header > div > h1{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    header > div > p{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    main {
+        /* It sets a box shadow where the blur-radius will be 1px. */
+        /* The box shadow’s color is “darkgrey” */
+        /* The offset-x, offset-y and spread-radius values will be set to 0. */
+        box-shadow: 0 0 1px darkgrey;
+        /* The background color of this element is “whitesmoke”. */
+        background-color: whitesmoke;
+
+        /* text-align: left; */
+
+        margin: 0 auto; /* Important to center articles... */
+
+        width: 95vw;
+
+    }
+
+    #intro-container{
+        text-align: left;
+        background-color: #c5192d;
+
+        font-weight: bold;
+
+        padding: 2rem;
+    }
+
+    /* Not have for mobile view. */
+    #intro-container > * {
+
+    }
+
+    #intro-container > div > ul{
+        list-style-type: repeating-emoji;
+    }
+
+    article{
+        padding: 1.5rem; /* To add padding around text & images. */
+    }
+
+    article > * {
+
+    }
+
+    img {
+        max-width: 100%; /* To make images responsive. */
+        height: auto;
+    }
+
+    footer{
+        /* display: inline-block; */
+        background-color: #c5192d;
+        color: white;
+
+        margin: 0 auto; /* Centers the footer. */
+        
+        text-align: center;
+
+        width: 95vw; /* Adjusts width to 94% of viewport. */
+
+
+    }
+
+    footer > * {
+        padding: 2rem; /* Adds padding around the text. */
+    }
+
+    footer > p{
+        margin-bottom: 0;
+    }
+
+    footer a{
+        color: white;
+    }
+    footer a:after{
+        color: white;
+    }
+
+    /* Phones */ 
+    @media only screen and (max-width : 600px) {
+
+        main > article:nth-child(2){
+            box-shadow: 0 1px darkgrey;
+        }
+
+    }
+
+    /* Tablets */
+    @media only screen and (min-width : 600px) 
+    and (max-width: 960px) {
+
+        body{
+            /* The default browser font size must be set to 16px. */
+            font-size: 16px;
+        }
+
+        header{
+            /* The header will be 65vh tall. */
+            height: 65vh;
+        }
+
+        /* 
+        The 3 main boxes (“Education for all”, main and footer)
+        will now take only 85 percent of the viewport width
+        (check mock-up).
+        */
+        header > div{
+            width: 85vw;
+        }
+
+        main, footer{
+            width: 85vw;
+        }
+
+        main > article{
+            box-shadow: 0 1px darkgrey;
+        }
+
+        article{
+            column-count: 2;
+            column-width: 45%; /* Gives error in CSS validator, but works. */
+            column-gap: 10%;
+        }
+
+        article > * {
+            float: left;
+            /* background-color: green; */
+        }
+
+        #intro-container{
+            background: linear-gradient(to right, #c5192d 0%, #c5192d 50%, whitesmoke 50%, whitesmoke 100%);
+            float: left;
+        }
+
+    }
+
+    /* Desktop */
+    @media only screen and (min-width : 960px) {
+
+        body{
+            font-size: 24px;
+        }
+        header{
+            height: 65vh;
+        }
+
+        /* 
+        The 3 main boxes (“Education for all”, main and footer)
+        will now take only 70 percent of the viewport width
+        (check mock-up).
+        */
+        header > div{
+            width: 70vw;
+        }
+
+        main, footer{
+            width: 70vw;
+        }
+
+        main > article{
+            box-shadow: 0 1px darkgrey;
+        }
+
+        article{
+            column-count: 2;
+            column-width: 45%; /* Gives error in CSS validator, but works. */
+            column-gap: 10%;
+        }
+
+        article > * {
+            float: left;
+            /* background-color: green; */
+        }
+
+        #intro-container{
+            background: linear-gradient(to right, #c5192d 0%, #c5192d 50%, whitesmoke 50%, whitesmoke 100%);
+        }
+
+        #intro-container > *{
+            float: left;
+        }
+    
+    }
