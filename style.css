@@ -257,7 +257,7 @@
 
         article{
             column-count: 2;
-            column-width: 45%;
+            column-width: 45%; /* Gives error in CSS validator, but works. */
             column-gap: 10%;
         }
 
@@ -302,7 +302,7 @@
 
         article{
             column-count: 2;
-            column-width: 45%;
+            column-width: 45%; /* Gives error in CSS validator, but works. */
             column-gap: 10%;
         }
 
