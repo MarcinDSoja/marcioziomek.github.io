@@ -23,17 +23,12 @@
         system: cyclic;
         symbols: "\1F64C" "\1F3EB" "\1F4DA";
         suffix: " ";
-        /* width: 1rem; */
-        
-/*         margin-left: 1rem;
-        margin-right: 1rem; */
       }
 
     /* Do shared configurations first, 
     then change depending on screen size. */
 
     body {
-
         /* The whole page sets linear gradient with
         the following values “(135deg, #f5f7fa 0%, #c3cfe2 100%)”. */
         background-image: linear-gradient(
@@ -47,7 +42,6 @@
         font-size: 14px;
         
         margin: 0 auto; /* Important to remove default margins. */
-
     }
 
     /* The default font size for the contents of the page
@@ -160,6 +154,11 @@
 
     #intro-container > div > ul{
         list-style-type: repeating-emoji;
+        list-style-position: inside;
+    }
+
+    #intro-container > div > ul > li::first-letter{
+        padding-left: 1rem;
     }
 
     article{
@@ -167,6 +166,10 @@
     }
 
     article > * {
+
+    }
+
+    article > div > p {
 
     }
 
