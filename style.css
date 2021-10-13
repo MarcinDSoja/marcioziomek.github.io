@@ -155,6 +155,7 @@
     #intro-container > div > ul{
         list-style-type: repeating-emoji;
         list-style-position: inside;
+        text-indent: 1rem;
     }
 
     #intro-container > div > ul > li::first-letter{
