@@ -13,6 +13,8 @@ Here is a link to the [live website](https://marcioziomek.github.io/).
 
 ## Structure of project
 
-The second assignment which we are doing include an `index.html` file that we are not allowed to modify, and an `assets` folder containing images and fonts. It is worth mentioning that we have added the `Lato-Semibold` fontface and added different file types of it and `Montserrat-Bold` with the Font Squirrel Generator.
+We did the second assignment which include an `index.html` file that we are not allowed to modify, and an `assets` folder containing images and fonts.
+
+It is worth mentioning that we have added the `Lato-Semibold` fontface and added different file types of it and `Montserrat-Bold` with the Font Squirrel Generator.
 
 The entire assignment is the content of the `style.css` file.
