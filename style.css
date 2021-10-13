@@ -46,7 +46,6 @@
 
     /* The default font size for the contents of the page
     will be 1.2rem. */
-    /* Is this it? ... */
     body > p{
         font-size: 1.2rem;
         /* The paragraph will never exceed 70ch wide
@@ -108,7 +107,6 @@
         transform: translate(-50%, 0);
         bottom: 0;
         margin-bottom: -4rem;
-
     }
 
     header > div > h1{
@@ -135,7 +133,6 @@
         width: 95vw;
 
         margin-top: 6rem;
-
     }
 
     #intro-container{
@@ -145,11 +142,6 @@
         font-weight: bold;
 
         padding: 2rem;
-    }
-
-    /* Not have for mobile view. */
-    #intro-container > * {
-
     }
 
     #intro-container > div > ul{
@@ -166,14 +158,6 @@
         padding: 1.5rem; /* To add padding around text & images. */
     }
 
-    article > * {
-
-    }
-
-    article > div > p {
-
-    }
-
     img {
         max-width: 100%; /* To make images responsive. */
         height: auto;
@@ -188,7 +172,6 @@
         text-align: center;
 
         width: 95vw; /* Adjusts width to 94% of viewport. */
-
     }
 
     footer > * {
