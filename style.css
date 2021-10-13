@@ -144,36 +144,23 @@
         padding: 2rem;
     }
 
-/*     #intro-container > div > ul{
-        list-style-type: repeating-emoji;
-        list-style-position: inside;
-        text-indent: 1rem;
-    }
-
-    #intro-container > div > ul > li::first-letter{
-        padding-left: 1rem;
-    } */
-
     #intro-container > div > ul > li {
         list-style: none;
     }
 
     #intro-container > div > ul > li:nth-child(3n + 1)::before {
-        /* content: "🙌"; */
         content: "\1F64C";
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
     #intro-container > div > ul > li:nth-child(3n + 2)::before {
-        /* content: "🏫"; */
         content: "\1F3EB";
         padding-left: 1rem;
         padding-right: 1rem;
     }
-
+    
     #intro-container > div > ul > li:nth-child(3n)::before {
-        /* content: "📚"; */
         content: "\1F4DA";
         padding-left: 1rem;
         padding-right: 1rem;
