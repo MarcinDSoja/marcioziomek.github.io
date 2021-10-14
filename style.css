@@ -263,18 +263,30 @@
         }
 
         article{
+            /* 
+            Each article will be displayed in a 2-column layout.
+            Each column will be 45% wide
+            and there will be a 10% gap between the two columns.
+            */
             column-count: 2;
             column-width: 45%; /* Gives error in CSS validator, but is needed. */
             column-gap: 10%;
         }
 
-        article > * {
+        article:nth-child(3) > div {
+            float: right;    
+        }
+
+        article:nth-child(4) > div {
             float: left;
         }
 
         #intro-container{
             background: linear-gradient(to right, #c5192d 0%, #c5192d 50%, whitesmoke 50%, whitesmoke 100%);
-            float: left;
+        }
+
+        #intro-container > div:last-child{
+            display: inline-block;
         }
 
     }
@@ -307,12 +319,21 @@
         }
 
         article{
+            /* 
+            Each article will be displayed in a 2-column layout.
+            Each column will be 45% wide
+            and there will be a 10% gap between the two columns.
+            */
             column-count: 2;
             column-width: 45%; /* Gives error in CSS validator, but is needed. */
             column-gap: 10%;
         }
 
-        article > * {
+        article:nth-child(3) > div {
+            float: right;    
+        }
+
+        article:nth-child(4) > div {
             float: left;
         }
 
@@ -320,8 +341,8 @@
             background: linear-gradient(to right, #c5192d 0%, #c5192d 50%, whitesmoke 50%, whitesmoke 100%);
         }
 
-        #intro-container > *{
-            float: left;
+        #intro-container > div:last-child{
+            display: inline-block;
         }
     
     }
